@@ -80,6 +80,10 @@ type Vout struct {
 type Tx struct {
 	Hex         string `json:"hex"`
 	Txid        string `json:"txid"`
+	AssetType   int32 `json:"assettype"`
+	Ticker      string `json:"ticker"`
+	Headline    string `json:"headline"`
+	Payload     string `json:"payload"`
 	Version     int32  `json:"version"`
 	LockTime    uint32 `json:"locktime"`
 	VSize       int64  `json:"vsize,omitempty"`
